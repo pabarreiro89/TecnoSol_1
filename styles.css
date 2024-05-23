@@ -2,12 +2,12 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #001f3f; 
-    color: #fff; 
+    background-color: #001f3f;
+    color: #fff;
 }
 
 header {
-    background-color: #001f3f; 
+    background-color: #001f3f;
     color: #fff;
     padding: 1em 0;
     text-align: center;
@@ -32,39 +32,40 @@ header nav ul li a {
 section {
     padding: 2em 1em;
     text-align: center;
-    background-color: #fff; 
-
+    background-color: #fff;
 }
-    #services {
-        text-align: center;
-        padding: 20px;
-    }
-    
-    .services-container {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-    
-    .service-box {
-        background-color: #f9f9f9; 
-        padding: 20px;
-        margin: 10px;
-        border: 1px solid #ddd; 
-        border-radius: 8px; 
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
-        width: 200px; 
-    }
-    
-    .service {
-        font-weight: bold;
-        margin-bottom: 10px; 
-    }
-    
-    .service-description {
-        font-size: 14px;
-        color: #555; 
-    }
+
+#services {
+    text-align: center;
+    padding: 20px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 200px; 
+    max-width: 100%; 
+}
+
+.service {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.service-description {
+    font-size: 14px;
+    color: #555;
+}
 
 form {
     display: flex;
@@ -81,20 +82,20 @@ form input, form select {
     padding: 0.5em;
     width: 80%;
     max-width: 400px;
-    color: #000; 
-    background-color: #fff; 
+    color: #000;
+    background-color: #fff;
 }
 
 form input[type="submit"] {
-    background-color: #004080; 
-    color: #fff; 
+    background-color: #004080;
+    color: #fff;
     border: none;
     padding: 0.75em 1.5em;
     cursor: pointer;
 }
 
 form input[type="submit"]:hover {
-    background-color: #0059b3; 
+    background-color: #0059b3;
 }
 
 footer {
@@ -112,14 +113,14 @@ footer {
 }
 
 .social-link {
-    color: #fff; 
+    color: #fff;
     text-decoration: none;
     font-size: 1.2em;
     transition: color 0.3s;
 }
 
-.social-link:hover {
-    color: #0059b3; 
+social-link:hover {
+    color: #0059b3;
 }
 
 /* Responsividad */
@@ -129,7 +130,7 @@ footer {
         align-items: center;
     }
 
-    .service {
+    .service-box { /
         width: 80%;
         margin-bottom: 1em;
     }
@@ -151,10 +152,14 @@ footer {
         width: 100%;
     }
 }
-.carousel-inner img {
-    height: 400px; 
-    object-fit: cover; 
 
+/* Ajuste del carrusel */
+.carousel-inner img {
+    width: 100%; 
+    height: 400px; 
+    object-fit: cover;
 }
+
+
 
 
